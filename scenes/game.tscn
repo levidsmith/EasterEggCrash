@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://mlkrfwu4nqng"]
 
-[ext_resource type="Script" uid="uid://bwf10ussfe66m" path="res://gamemanager.gd" id="1_80nbo"]
-[ext_resource type="PackedScene" uid="uid://cjte2avqv4hp" path="res://models/background.glb" id="2_e2o6t"]
+[ext_resource type="Script" uid="uid://bwf10ussfe66m" path="res://scripts/gamemanager.gd" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://cjte2avqv4hp" path="res://models/background.glb" id="2_lnu2h"]
 
 [sub_resource type="Environment" id="Environment_e2o6t"]
 background_mode = 1
@@ -22,7 +22,7 @@ transform = Transform3D(0.9627316, -0.11598079, 0.24432841, 0.005088939, 0.91099
 light_energy = 0.966
 
 [node name="Node3D" type="Node3D" parent="." unique_id=1208417427]
-script = ExtResource("1_80nbo")
+script = ExtResource("1_yqjtg")
 
-[node name="background" parent="." unique_id=155580815 instance=ExtResource("2_e2o6t")]
+[node name="background" parent="." unique_id=155580815 instance=ExtResource("2_lnu2h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)

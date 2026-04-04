@@ -2,7 +2,7 @@ extends Node3D
 
 var drop_countdown = 0.0
 var drop_countdown_max = .5
-var packed_egg = preload("res://egg.tscn")
+var packed_egg = preload("res://scenes/egg.tscn")
 
 var egg1
 var egg2
@@ -76,7 +76,7 @@ func _process(delta: float) -> void:
 				next_row = egg1.row
 				next_col = egg1.col - 1
 		
-		if next_row >= 0 and next_row < BOARD_ROWS - 1 and next_col >= 0 and next_col < BOARD_COLS - 1:
+		if next_row >= 0 and next_row < BOARD_ROWS  and next_col >= 0 and next_col < BOARD_COLS:
 			egg2.row = next_row
 			egg2.col = next_col
 		
@@ -112,11 +112,22 @@ func _spawn_eggs() -> void:
 	egg2 = packed_egg.instantiate()
 	add_child(egg1)
 	add_child(egg2)
+
+	var iRand
+	iRand = randi() % 5
+	if iRand == 0:
+		egg1.setCrash(true)
+
+	iRand = randi() % 5
+	if iRand == 0:
+		egg2.setCrash(true)
+
 	
 	egg1.setEggColor(randi() % 4 + 1)
 	egg2.setEggColor(randi() % 4 + 1)
 
 	egg1.setCell(3, 11)
-	
 	egg2.setCell(3, 12)
+	
+	
 	

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c4k0n2duosr7p"]
+
+[ext_resource type="PackedScene" uid="uid://cfd5g5qem2ju6" path="res://models/crash.glb" id="1_vf15w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jldf0"]
+albedo_color = Color(0, 0.64, 0, 1)
+
+[node name="crash" unique_id=1250354382 instance=ExtResource("1_vf15w")]
+
+[node name="Diamond" parent="." index="0" unique_id=817949835]
+surface_material_override/0 = SubResource("StandardMaterial3D_jldf0")
