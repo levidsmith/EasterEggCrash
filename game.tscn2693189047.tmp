@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://mlkrfwu4nqng"]
+
+[ext_resource type="Script" uid="uid://bwf10ussfe66m" path="res://gamemanager.gd" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://cjte2avqv4hp" path="res://models/background.glb" id="2_e2o6t"]
+
+[sub_resource type="Environment" id="Environment_e2o6t"]
+background_mode = 1
+background_color = Color(0, 0.50383776, 6.738305e-07, 1)
+
+[node name="Node3D" type="Node3D" unique_id=1484966497]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1438283024]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 6, -4.82)
+environment = SubResource("Environment_e2o6t")
+projection = 1
+size = 15.015
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1906588704]
+transform = Transform3D(-0.9997881, 0.012860921, -0.016073044, 0.00508894, 0.9109934, 0.41238943, 0.019946147, 0.4122203, -0.9108659, 0, 3.9901915, 0)
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1208417427]
+script = ExtResource("1_80nbo")
+
+[node name="background" parent="." unique_id=774370090 instance=ExtResource("2_e2o6t")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)

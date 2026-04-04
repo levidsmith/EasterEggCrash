@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cu4ypxynns3w5"]
+
+[ext_resource type="Script" uid="uid://c8mchsebwpwph" path="res://models/egg.gd" id="2_60cwx"]
+[ext_resource type="PackedScene" uid="uid://evgprsb78eo" path="res://egg_red.tscn" id="2_gtrp8"]
+[ext_resource type="PackedScene" uid="uid://bmkpgyi2r6smp" path="res://egg_green.tscn" id="3_4lxc0"]
+[ext_resource type="PackedScene" uid="uid://meb3e5h5w54i" path="res://egg_yellow.tscn" id="4_wdad3"]
+[ext_resource type="PackedScene" uid="uid://cdr5ighfnihde" path="res://egg_blue.tscn" id="5_2epbb"]
+
+[node name="Node3D" type="Node3D" unique_id=1765399871]
+script = ExtResource("2_60cwx")
+
+[node name="egg_red" parent="." unique_id=2046417561 instance=ExtResource("2_gtrp8")]
+visible = false
+
+[node name="egg_green" parent="." unique_id=859363608 instance=ExtResource("3_4lxc0")]
+visible = false
+
+[node name="egg_yellow" parent="." unique_id=362704809 instance=ExtResource("4_wdad3")]
+visible = false
+
+[node name="egg_blue" parent="." unique_id=857013232 instance=ExtResource("5_2epbb")]
+visible = false

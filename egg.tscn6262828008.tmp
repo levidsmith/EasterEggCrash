@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cu4ypxynns3w5"]
+
+[ext_resource type="PackedScene" uid="uid://csiqhf1sdno3k" path="res://models/egg.glb" id="1_6upkn"]
+[ext_resource type="Script" uid="uid://c8mchsebwpwph" path="res://models/egg.gd" id="2_60cwx"]
+[ext_resource type="Script" uid="uid://cd264oy7t0wwm" path="res://models/egg_model.gd" id="3_s80rl"]
+
+[node name="Node3D" type="Node3D" unique_id=1765399871]
+script = ExtResource("2_60cwx")
+
+[node name="egg" parent="." unique_id=2046417561 instance=ExtResource("1_6upkn")]
+script = ExtResource("3_s80rl")

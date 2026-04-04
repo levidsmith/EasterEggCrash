@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://meb3e5h5w54i"]
+
+[ext_resource type="PackedScene" uid="uid://csiqhf1sdno3k" path="res://models/egg.glb" id="1_l4uap"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3475"]
+albedo_color = Color(0.64, 0.64, 0, 1)
+
+[node name="egg" unique_id=2046417561 instance=ExtResource("1_l4uap")]
+
+[node name="mesh_egg" parent="." index="0" unique_id=674407042]
+surface_material_override/0 = SubResource("StandardMaterial3D_e3475")
