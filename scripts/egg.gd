@@ -4,10 +4,12 @@ var row
 var col
 var color
 var isCrash
+var isActive
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	isCrash = false
+	isActive = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,7 +18,8 @@ func _process(delta: float) -> void:
 	pass
 
 func setEggColor(c):
-#	$egg.get_mesh()
+	color = c
+
 	var egg_red = get_node("./egg_red")
 	var egg_green = get_node("./egg_green")
 	var egg_yellow = get_node("./egg_yellow")
@@ -26,7 +29,7 @@ func setEggColor(c):
 	var diamond_green = get_node("./diamond_green")
 	var diamond_yellow = get_node("./diamond_yellow")
 	var diamond_blue = get_node("./diamond_blue")
-	
+
 	if isCrash:
 		match c:
 			1:
@@ -56,3 +59,9 @@ func setCell(new_col: int, new_row: int):
 	row = new_row
 	col = new_col
 	global_position = Vector3(col + 0.5, row + 0.5, 0)
+
+func destroy():
+	isActive = false
+	var node = get_node(".")
+	node.visible = false
+	
