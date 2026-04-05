@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://vqucx50ldem2" path="res://models/game_bkg.glb" id="4_lbhrr"]
 [ext_resource type="AudioStream" uid="uid://sbqei3vg4b28" path="res://soundeffects/drop.wav" id="5_iywne"]
 [ext_resource type="AudioStream" uid="uid://c1qfoca3h1ail" path="res://soundeffects/crash.wav" id="6_p57ef"]
+[ext_resource type="AudioStream" uid="uid://d0ficci5aj524" path="res://music/easter-egg-crash-game.mp3" id="8_0tnpc"]
 
 [sub_resource type="Environment" id="Environment_e2o6t"]
 background_color = Color(0.5294118, 0.63529414, 0.1882353, 1)
@@ -160,3 +161,7 @@ stream = ExtResource("5_iywne")
 
 [node name="audioCrash" type="AudioStreamPlayer2D" parent="." unique_id=945324486]
 stream = ExtResource("6_p57ef")
+
+[node name="audioMusicGame" type="AudioStreamPlayer2D" parent="." unique_id=1449091638]
+stream = ExtResource("8_0tnpc")
+autoplay = true
