@@ -3,9 +3,9 @@
 [ext_resource type="Script" uid="uid://bwf10ussfe66m" path="res://scripts/gamemanager.gd" id="1_yqjtg"]
 [ext_resource type="FontFile" uid="uid://tcvsw3l7cxyv" path="res://fonts/Elmshorn-Regular.ttf" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://ggv7fyei5xct" path="res://scenes/background.tscn" id="4_iywne"]
-[ext_resource type="PackedScene" uid="uid://vqucx50ldem2" path="res://models/game_bkg.glb" id="4_lbhrr"]
 [ext_resource type="AudioStream" uid="uid://sbqei3vg4b28" path="res://soundeffects/drop.wav" id="5_iywne"]
 [ext_resource type="AudioStream" uid="uid://c1qfoca3h1ail" path="res://soundeffects/crash.wav" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://wacpq81rf8ew" path="res://models/game_bkg1.glb" id="7_u5sy4"]
 [ext_resource type="AudioStream" uid="uid://d0ficci5aj524" path="res://music/easter-egg-crash-game.mp3" id="8_0tnpc"]
 
 [sub_resource type="Environment" id="Environment_e2o6t"]
@@ -153,9 +153,6 @@ theme = SubResource("Theme_lbhrr")
 theme_override_colors/default_color = Color(0.9779369, 0.97793704, 0.9779369, 1)
 text = "LEVEL ?"
 
-[node name="game_bkg" parent="." unique_id=1622903966 instance=ExtResource("4_lbhrr")]
-transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1, 2.2799015, 6.923449, -1.3045044)
-
 [node name="audioDrop" type="AudioStreamPlayer2D" parent="." unique_id=1041549713]
 stream = ExtResource("5_iywne")
 
@@ -165,3 +162,6 @@ stream = ExtResource("6_p57ef")
 [node name="audioMusicGame" type="AudioStreamPlayer2D" parent="." unique_id=1449091638]
 stream = ExtResource("8_0tnpc")
 autoplay = true
+
+[node name="game_bkg1" parent="." unique_id=504800622 instance=ExtResource("7_u5sy4")]
+transform = Transform3D(1.715, 0, 0, 0, 1, 0, 0, 0, 1, 4.6894455, 5.4418535, -0.39635277)

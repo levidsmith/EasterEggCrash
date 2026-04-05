@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5yfwaywgtl5f"
-path.s3tc="res://.godot/imported/game_bkg_game_bkg.jpg-5988f5aff5dddae25868c59e334aa956.s3tc.ctex"
+uid="uid://c5r5eg40nfhru"
+path.s3tc="res://.godot/imported/game_bkg1_game_bkg.jpg-815c3e14914d389145b22dc1d0e0b861.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "dd6661908cbd3ff97af4519f2cdd8550"
+"md5": "0cd704d8cd0959bf6ab0a32d0dc1e956"
 }
 
 [deps]
 
-source_file="res://models/game_bkg_game_bkg.jpg"
-dest_files=["res://.godot/imported/game_bkg_game_bkg.jpg-5988f5aff5dddae25868c59e334aa956.s3tc.ctex"]
+source_file="res://models/game_bkg1_game_bkg.jpg"
+dest_files=["res://.godot/imported/game_bkg1_game_bkg.jpg-815c3e14914d389145b22dc1d0e0b861.s3tc.ctex"]
 
 [params]
 

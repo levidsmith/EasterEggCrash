@@ -6,6 +6,8 @@ var color
 var isCrash
 var isActive
 
+var rot = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	isCrash = false
@@ -15,6 +17,9 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	global_position = Vector3(col + 0.5, row + 0.5, 0)
+	
+	rot = delta * 6.28 / 5 #rotate every 5 seconds
+	global_rotate(Vector3(0, 1, 0), rot)
 	pass
 
 func setEggColor(c):
