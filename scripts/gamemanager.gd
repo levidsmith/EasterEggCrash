@@ -21,9 +21,13 @@ var gamestate: State = State.READY
 
 var readyDelay: float
 
+var soundDrop
+
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
 	init_ready()
 
 func init_ready():
@@ -191,6 +195,8 @@ func updatePlaying(delta: float) -> void:
 			egg2.row -= 1
 			
 		if hasBlocksLanded:
+			get_node("/root/Node3D/audioDrop").play()
+			
 			dropAllEggs()
 			iCrashCount = doCrash()
 			iCrashCountTotal = iCrashCount
@@ -198,6 +204,12 @@ func updatePlaying(delta: float) -> void:
 				dropAllEggs()
 				iCrashCount = doCrash()
 				iCrashCountTotal += iCrashCount
+				
+			if iCrashCountTotal == 0:
+				get_node("/root/Node3D/audioDrop").play()
+			else:
+				get_node("/root/Node3D/audioCrash").play()
+
 			
 			
 			_spawn_eggs()

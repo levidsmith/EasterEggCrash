@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ggv7fyei5xct"]
+
+[ext_resource type="PackedScene" uid="uid://cjte2avqv4hp" path="res://models/background.glb" id="1_bkp1e"]
+[ext_resource type="Texture2D" uid="uid://dpxy4xs2revwn" path="res://sprites/board_bkg.jpg" id="2_y0upk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y0upk"]
+shading_mode = 0
+albedo_texture = ExtResource("2_y0upk")
+
+[node name="background" unique_id=155580815 instance=ExtResource("1_bkp1e")]
+
+[node name="Plane" parent="." index="0" unique_id=1062927253]
+surface_material_override/0 = SubResource("StandardMaterial3D_y0upk")

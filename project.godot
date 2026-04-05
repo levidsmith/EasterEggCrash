@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="EasterEggCrash"
-run/main_scene="uid://mlkrfwu4nqng"
+run/main_scene="uid://c4rpdkbb3ehk5"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
 
 [input]
 

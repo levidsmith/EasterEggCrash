@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://c4rpdkbb3ehk5"]
+
+[ext_resource type="FontFile" uid="uid://tcvsw3l7cxyv" path="res://fonts/Elmshorn-Regular.ttf" id="1_4ignj"]
+[ext_resource type="Texture2D" uid="uid://ciwh18cigfx7j" path="res://sprites/title_bkg.jpg" id="2_p6dhs"]
+[ext_resource type="Script" uid="uid://b5k77qy5lw7i8" path="res://scenes/buttonStart.gd" id="2_wosw1"]
+
+[sub_resource type="Theme" id="Theme_wosw1"]
+default_font = ExtResource("1_4ignj")
+default_font_size = 128
+
+[sub_resource type="Theme" id="Theme_p6dhs"]
+default_font_size = 48
+
+[sub_resource type="Theme" id="Theme_4ignj"]
+default_font = ExtResource("1_4ignj")
+default_font_size = 48
+
+[node name="Node2D" type="Node2D" unique_id=4898069]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=713477385]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_p6dhs")
+
+[node name="RichTextLabelTitle" type="RichTextLabel" parent="." unique_id=2147264880]
+offset_left = 449.0
+offset_top = 91.0
+offset_right = 875.0
+offset_bottom = 461.0
+theme = SubResource("Theme_wosw1")
+theme_override_colors/default_color = Color(0.9843137, 0.95686275, 0.6039216, 1)
+theme_override_colors/font_shadow_color = Color(0.46, 0.42856666, 0.08280001, 1)
+theme_override_constants/line_separation = -32
+theme_override_constants/shadow_outline_size = 4
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+text = "EASTER
+EGG
+CRASH"
+horizontal_alignment = 1
+
+[node name="RichTextLabelCopyright" type="RichTextLabel" parent="." unique_id=505293110]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 423.0
+offset_top = 607.0
+offset_right = 883.0
+offset_bottom = 669.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_p6dhs")
+theme_override_colors/default_color = Color(0.7294118, 0.57254905, 0.85882354, 1)
+theme_override_colors/font_shadow_color = Color(0.39050013, 0, 0.71, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/normal_font = ExtResource("1_4ignj")
+text = "2026 LDSMITH GAMES"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=838909525]
+offset_left = 567.0
+offset_top = 495.0
+offset_right = 769.0
+offset_bottom = 562.0
+theme = SubResource("Theme_4ignj")
+text = "Start"
+script = ExtResource("2_wosw1")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
