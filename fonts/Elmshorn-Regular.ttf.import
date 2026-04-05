@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bi5vxhsb5qo2k"
-path="res://.godot/imported/Casper Comics Solid.ttf-caa5d95d8abf02c8b10146d8789e4edb.fontdata"
+uid="uid://tcvsw3l7cxyv"
+path="res://.godot/imported/Elmshorn-Regular.ttf-48ed7c148b8b69d00e85ae0e805d7bdd.fontdata"
 
 [deps]
 
-source_file="res://fonts/Casper Comics Solid.ttf"
-dest_files=["res://.godot/imported/Casper Comics Solid.ttf-caa5d95d8abf02c8b10146d8789e4edb.fontdata"]
+source_file="res://fonts/Elmshorn-Regular.ttf"
+dest_files=["res://.godot/imported/Elmshorn-Regular.ttf-48ed7c148b8b69d00e85ae0e805d7bdd.fontdata"]
 
 [params]
 
