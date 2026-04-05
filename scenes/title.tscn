@@ -76,4 +76,7 @@ script = ExtResource("2_wosw1")
 stream = ExtResource("5_4rr2b")
 autoplay = true
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=373202450]
+position = Vector2(640, 360)
+
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

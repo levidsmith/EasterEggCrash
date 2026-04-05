@@ -1,29 +1,17 @@
 [gd_scene format=3 uid="uid://cu4ypxynns3w5"]
 
 [ext_resource type="Script" uid="uid://c8mchsebwpwph" path="res://scripts/egg.gd" id="2_60cwx"]
-[ext_resource type="PackedScene" uid="uid://evgprsb78eo" path="res://scenes/egg_red.tscn" id="2_gtrp8"]
-[ext_resource type="PackedScene" uid="uid://bmkpgyi2r6smp" path="res://scenes/egg_green.tscn" id="3_4lxc0"]
-[ext_resource type="PackedScene" uid="uid://meb3e5h5w54i" path="res://scenes/egg_yellow.tscn" id="4_wdad3"]
-[ext_resource type="PackedScene" uid="uid://cdr5ighfnihde" path="res://scenes/egg_blue.tscn" id="5_2epbb"]
 [ext_resource type="PackedScene" uid="uid://y1l4gdphej3i" path="res://scenes/diamond_red.tscn" id="6_rh556"]
 [ext_resource type="PackedScene" uid="uid://c4k0n2duosr7p" path="res://scenes/diamond_green.tscn" id="7_xb3ay"]
 [ext_resource type="PackedScene" uid="uid://b0ya5euqwdidc" path="res://scenes/diamond_yellow.tscn" id="8_ic2vr"]
 [ext_resource type="PackedScene" uid="uid://duwq6iipmds07" path="res://scenes/diamond_blue.tscn" id="9_42deq"]
+[ext_resource type="PackedScene" uid="uid://clgyjhtsnt0bp" path="res://models/egg_blue.glb" id="9_bd0q5"]
+[ext_resource type="PackedScene" uid="uid://c17quj87iil08" path="res://models/egg_yellow.glb" id="9_ic2vr"]
+[ext_resource type="PackedScene" uid="uid://cqubbgb6vpokb" path="res://models/egg_red.glb" id="9_rh556"]
+[ext_resource type="PackedScene" uid="uid://c3rkq83a7x06l" path="res://models/egg_green.glb" id="9_xb3ay"]
 
 [node name="Node3D" type="Node3D" unique_id=1765399871]
 script = ExtResource("2_60cwx")
-
-[node name="egg_red" parent="." unique_id=2046417561 instance=ExtResource("2_gtrp8")]
-visible = false
-
-[node name="egg_green" parent="." unique_id=859363608 instance=ExtResource("3_4lxc0")]
-visible = false
-
-[node name="egg_yellow" parent="." unique_id=362704809 instance=ExtResource("4_wdad3")]
-visible = false
-
-[node name="egg_blue" parent="." unique_id=857013232 instance=ExtResource("5_2epbb")]
-visible = false
 
 [node name="diamond_red" parent="." unique_id=1250354382 instance=ExtResource("6_rh556")]
 visible = false
@@ -35,4 +23,16 @@ visible = false
 visible = false
 
 [node name="diamond_blue" parent="." unique_id=1785707209 instance=ExtResource("9_42deq")]
+visible = false
+
+[node name="egg_red" parent="." unique_id=1124583347 instance=ExtResource("9_rh556")]
+visible = false
+
+[node name="egg_green" parent="." unique_id=1614382898 instance=ExtResource("9_xb3ay")]
+visible = false
+
+[node name="egg_yellow" parent="." unique_id=38962834 instance=ExtResource("9_ic2vr")]
+visible = false
+
+[node name="egg_blue" parent="." unique_id=755288679 instance=ExtResource("9_bd0q5")]
 visible = false
